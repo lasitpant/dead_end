@@ -90,8 +90,8 @@ require_once('bdd.php');
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>FullCalendar BS3 PHP MySQL</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
+                <h1>Event Calendar</h1>
+                <p class="lead"></p>
                 <div id="calendar" class="col-centered">
                 </div>
             </div>
