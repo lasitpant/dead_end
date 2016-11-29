@@ -1,7 +1,9 @@
 <?php
 require_once('bdd.php');
-//require_once('create.php');
 
+
+//require_once('create.php');
+$conn = connection();
 
 
 //$sql = "SELECT id, title, start, end, color FROM events ";
