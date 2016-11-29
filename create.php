@@ -1,5 +1,5 @@
 <?php
-include_once 'taskmodel.php';
+include_once 'bdd.php';
 
 $conn = connect();
 $sql = "CREATE TABLE `events` (
