@@ -1,4 +1,4 @@
-//<?php
+<?php
 require_once('create.php');
 //require_once('bdd.php');
 
