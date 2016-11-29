@@ -15,3 +15,12 @@ catch(Exception $e)
 {
         die('Error : '.$e->getMessage());
 }
+//try{
+//	$conn->query($sql);
+//}
+//catch(Exception $e){
+//	print_r($e);
+//}
+//echo "<h3>Table created.</h3>";
+
+?>
