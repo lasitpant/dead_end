@@ -2,10 +2,10 @@
 try
 {
 	
-	$bdd = new PDO("sqlsrv:server = tcp:newcalendar.database.windows.net,1433; Database = newDb", "rituraj", "Pant@1234");
+	$bdd = new PDO("sqlsrv:server = tcp:newcalendar.database.windows.net,1433; Database = newDb", "lasit", "Pant@1234");
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(Exception $e)
 {
-        die('Erreur : '.$e->getMessage());
+        die('Error : '.$e->getMessage());
 }
