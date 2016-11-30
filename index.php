@@ -1,6 +1,6 @@
 <?php
 require_once('bdd.php');
-$sql = "SELECT id, title, start, end, color FROM events";
+$sql = "SELECT * FROM events";
 echo $sql;
 //$req = $bdd->prepare($sql);
 //$req->execute();
