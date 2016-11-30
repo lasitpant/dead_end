@@ -11,14 +11,13 @@ echo "connection done..!"
 
 
 
-//$sql = "SELECT id, title, start, end, color FROM events ";
+$sql = "SELECT id, title, start, end, color FROM events ";
 
-//$req = $bdd->prepare($sql);
-//$req->execute();
+$req = $bdd->prepare($sql);
+$req->execute();
 
-//$events = $req->fetchAll();
-
-//?>
+$events = $req->fetchAll();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
