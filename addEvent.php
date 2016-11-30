@@ -11,8 +11,8 @@ if (isset($_POST['title']) && isset($_POST['start']) && isset($_POST['end']) && 
 	$color = $_POST['color'];
 
 	$sql = "INSERT INTO events(title, start, end, color) values ('$title', '$start', '$end', '$color')";
-	//$req = $bdd->prepare($sql);
-	//$req->execute();
+	$req = $bdd->prepare($sql);
+	$req->execute();
 	
 	echo $sql;
 	
