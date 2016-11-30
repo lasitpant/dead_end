@@ -1,7 +1,7 @@
 <?php
 require_once('bdd.php');
-$sql = "SELECT * FROM events"
-echo $sql
+$result = mysql_query("Select * from events");
+echo $result ;
 //$req = $bdd->prepare($sql);
 //$req->execute();
 //$events = $req->fetchAll();
