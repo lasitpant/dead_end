@@ -4,6 +4,7 @@ require_once('bdd.php');
 
 //require_once('create.php');
 $conn = connection();
+echo "connection done..!" 
 
 
 
