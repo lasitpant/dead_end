@@ -5,6 +5,7 @@ require_once('bdd.php');
 //echo $_POST['title'];
 if (isset($_POST['title']) && isset($_POST['start']) && isset($_POST['end']) && isset($_POST['color'])){
 	
+	echo "I am here...";
 	$title = $_POST['title'];
 	$start = $_POST['start'];
 	$end = $_POST['end'];
@@ -13,7 +14,7 @@ if (isset($_POST['title']) && isset($_POST['start']) && isset($_POST['end']) && 
 	$sql = "INSERT INTO events(title, start, end, color) values ('$title', '$start', '$end', '$color')";
 	$req = $bdd->prepare($sql);
 	$req->execute();
-	
+	echo "done";
 	echo $sql;
 	
 	$query = $bdd->prepare( $sql );
