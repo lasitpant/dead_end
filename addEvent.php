@@ -1,6 +1,5 @@
 <?php
 
-// Connexion à la base de données
 require_once('bdd.php');
 //echo $_POST['title'];
 if (isset($_POST['title']) && isset($_POST['start']) && isset($_POST['end']) && isset($_POST['color'])){
@@ -10,7 +9,7 @@ if (isset($_POST['title']) && isset($_POST['start']) && isset($_POST['end']) && 
 	$start = $_POST['start'];
 	$end = $_POST['end'];
 	$color = $_POST['color'];
-
+        echo "fooo" ; 
 	$sql = "INSERT INTO events(title, start, end, color) values ('$title', '$start', '$end', '$color')";
 	$req = $bdd->prepare($sql);
 	$req->execute();
