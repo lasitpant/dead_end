@@ -25,19 +25,13 @@ echo "Success: A proper connection to MySQL was made! The my_db database is grea
 echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
 mysqli_close($link);
 
-
-
-
-//require_once('create.php');
-//$conn = connection();
-//echo "connection done..!" 
+ 
 	
-//$sql = "SELECT id, title, start, end, color FROM events ";
+$sql = "SELECT id, title, start, end, color FROM events ";
 
-//$req = $bdd->prepare($sql);
-//$req->execute();
-
-//$events = $req->fetchAll();
+$req = $bdd->prepare($sql);
+$req->execute();
+$events = $req->fetchAll();
 ?>
 
 <!DOCTYPE html>
