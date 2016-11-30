@@ -1,6 +1,6 @@
 <?php
 require_once('bdd.php');
-$result = sprintf("Select * from events");
+$result = 'Select title from events';
 echo $result ;
 //$req = $bdd->prepare($sql);
 //$req->execute();
