@@ -17,6 +17,9 @@ foreach ($_SERVER as $key => $value) {
 }
 
 $link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,$connectstr_dbname);
+mysql_select_db('neweve');
+$query = "select * from events";
+echo $query;
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
