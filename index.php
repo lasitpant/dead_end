@@ -1,5 +1,6 @@
-//<?php
-//require_once('bdd.php');
+<?php
+
+require_once('bdd.php');
 
 
 //require_once('create.php');
@@ -17,7 +18,7 @@
 //$req->execute();
 
 //$events = $req->fetchAll();
-//?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
