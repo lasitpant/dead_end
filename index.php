@@ -6,14 +6,8 @@ require_once('bdd.php');
 $conn = connection();
 echo "connection done..!" 
 	
-$sql = createtable();
-try{
-	$conn->query($sql);
-}
-catch(Exception $e){
-	print_r($e);
-}
-echo "<h3>Table created.</h3>";	
+
+
 
 
 
