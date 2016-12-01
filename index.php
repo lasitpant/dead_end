@@ -3,6 +3,7 @@ require_once('bdd.php');
 
 $query = ("SELECT title FROM events;");
 $result = mysql_query($query);
+echo $result;
 //$sql = 'Select title from events';
 //$result = mysql_query($sql);
 //while($row = mysql_fetch_array($result)){
