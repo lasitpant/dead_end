@@ -18,7 +18,7 @@ foreach ($_SERVER as $key => $value) {
 
 $link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,$connectstr_dbname);
 mysql_select_db('neweve');
-$query = 'select * from events';
+$query = mysql_query('select * from neweve.events');
 echo $query;
 
 if (!$link) {
@@ -30,7 +30,5 @@ if (!$link) {
 
 echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
 echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
-$sql = 'SELECT * from neweve.events';
-echo $sql;
 
 ?>
