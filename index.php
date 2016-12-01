@@ -1,11 +1,11 @@
 <?php
 require_once('bdd.php');
 
-$query = ("SELECT title FROM events;");
-$result = mysql_query($query);
-echo $result;
+//$query = ("SELECT title FROM events;");
+//$result = mysql_query($query);
+//echo $result;
 
-$req = $bdd->prepare($result);
+$req = $bdd->prepare('SELECT title FROM events;');
 //$req->execute();
 //$events = $req->fetchAll();
 //mysqli_close($link);
