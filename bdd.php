@@ -18,7 +18,7 @@ foreach ($_SERVER as $key => $value) {
 
 $link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,$connectstr_dbname);
 mysql_select_db('neweve');
-$query = mysql_query('select * from neweve.events');
+$query = mysql_query('select title from neweve.events');
 echo $query;
 
 if (!$link) {
